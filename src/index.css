@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dfont {
+  font-family: "Boucherie Cursive Bold";
+}
+
+input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  width: 6px;
+  height: 15px;
+  border: solid #fff; /* Set the color to white */
+  border-width: 0 2px 2px 0;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
